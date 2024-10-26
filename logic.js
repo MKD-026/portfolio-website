@@ -15,7 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
   
   function downloadResume() {
-    const resumeUrl = 'https://drive.google.com/file/d/1Y1g9raRBs9pLmBQE8OqmSYmyN0vsuhKU/view?usp=share_link';
+    const resumeUrl = 'https://drive.google.com/file/d/10trnHTSJEKa6jPSCo52h-v6s9CIMRatN/view?usp=sharing';
 
     // Create a temporary link element
     const link = document.createElement('a');
