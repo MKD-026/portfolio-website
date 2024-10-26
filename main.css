@@ -81,13 +81,14 @@ header {
   font-weight: 500;
   margin-left: 40px;
   transition: 0.5s;
+  margin-right: 15px;
 }
 
 .navigation .btnlogin-popup:hover {
   background-color: black;
   color: #162938;
 }
-
+/* ---------------------------- */
 
 /* hero section starts*/
 .home {
@@ -215,23 +216,7 @@ header {
 
 /* hero section end */
 /* --------------------------------------------- */
-/* about, experiences, and projects */
-#about, #projects {
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  color: #333333; /* Dark text color for readability */
-}
 
-/* #experience {
-  display: flex;
-  background-color: #F5F7FA;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-} */
 
 /* --------------------------------------------- */
 /* about section starts */
@@ -314,7 +299,6 @@ header {
 
 .experience-container {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -330,7 +314,7 @@ header {
 .experience-columns {
   display: flex;
   justify-content: space-between; /* Ensures space between columns */
-  gap: 40px; /* Adjust the gap between the two columns */
+  gap: 30px; /* Adjust the gap between the two columns */
 }
 
 /* Industry and Research column */
