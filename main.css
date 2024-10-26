@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+  font-size: 65%;
+}
+/* --------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 99;
+  background-color: black;  
+  /* black; */
+}
+
+.logo a {
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: -50px;
+  color: crimson;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: crimson;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btnlogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+.navigation .btnlogin-popup:hover {
+  background-color: black;
+  color: #162938;
+}
+
+
+/* hero section starts*/
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+  }
+  .home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; /* Same as background */
+  }
+  
+  .home .content {
+    display: flex; /* Use flexbox to create two columns */
+    justify-content: space-between; /* Space the columns evenly */
+    align-items: center; /* Vertically align the items */
+    padding: 4rem; /* Add padding to the content container */
+    z-index: 10; 
+}
+
+.home .content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.home .content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #002057;
+}
+
+.home .content h2 span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: crimson;
+}
+
+.home .text-container {
+    flex: 2; /* Make the text container take up 60% of the space */
+    padding-right: 2rem; /* Add padding to the right side of the text container */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.home .image-container {
+    flex: 1; /* Make the image container take up 40% of the space */
+    display: flex;
+    justify-content: flex-end; /* Push the image to the right */
+    align-items: center; /* Vertically align the image */
+}
+
+.home .image-container img {
+    width: 40vw; /* Adjust the width as needed */
+    border-radius: 50%; /* Round image */
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.home .buttons {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 1rem;
+}
+
+.home .btn {
+  margin-top: 1rem;
+  font-size: 16px;
+  height: 50px;
+  display: flex; /* Make the button a flex container */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background: darkslategray;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.home .social-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem; /* Adjust space between icons */
+  position: relative;
+  transition: 0.5s;
+  border-radius: 50%;
+  background-color: darkslategray; /* Background color for circle */
+  color: white; /* Icon color */
+  text-decoration: none;
+  font-size: 1.5rem; /* Adjust background color as needed */
+}
+
+.home .social-icon:hover {
+  background-color: darkslategray; /* Hover background color */
+  color: #fff; /* Icon color on hover */
+}
+
+.home .social-icon i {
+  font-size: 1.5rem; /* Icon size */
+}
+
+/* hero section end */
+/* --------------------------------------------- */
+/* about, experiences, and projects */
+#about, #projects {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #333333; /* Dark text color for readability */
+}
+
+/* #experience {
+  display: flex;
+  background-color: #F5F7FA;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+} */
+
+/* --------------------------------------------- */
+/* about section starts */
+.about {
+  padding: 50px 100px; /* More spacing for larger screens */
+  background-color: #f7f7f7; /* Soft background color */
+  color: #333; /* Text color */
+}
+
+.about .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #002057; /* Darker text color for heading */
+  margin-bottom: 2rem;
+}
+
+.about .heading span {
+  color: crimson; /* Highlighted color for "Me" */
+}
+
+.about .row {
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about .image {
+  flex: 1;
+  text-align: left;
+}
+
+.about .image img {
+  width: 100%;
+  max-width: 350px; /* Adjust the max width for better scaling */
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.about .content {
+  flex: 2;
+  padding: 2rem;
+}
+
+.about .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #002057;
+}
+
+.about .content .name-highlight {
+  color: crimson; /* Highlight your name */
+  font-weight: 800;
+}
+
+.about .content .intro-text {
+  font-size: 18px;
+  line-height: 1.8; /* Increase line spacing for readability */
+  margin-top: 1.5rem;
+  color: #555; /* Softer text color */
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+/* about section ends */
+/* --------------------------------------------- */
+
+/* --------------------------------------------- */
+/* Experience Section Starts */
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  color: #333333; /* Dark text color for readability */
+}
+
+.experience-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #002057;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Flexbox layout for Industry and Research experience columns */
+.experience-columns {
+  display: flex;
+  justify-content: space-between; /* Ensures space between columns */
+  gap: 40px; /* Adjust the gap between the two columns */
+}
+
+/* Industry and Research column */
+.experience-timeline {
+  width: 48%; /* Equal width for both columns */
+  font-size: 22px;
+  color: crimson;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.timeline-content-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  border-left: 5px solid #002057;
+}
+
+.timeline-content-item h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #002057;
+  font-weight: 700;
+}
+
+.timeline-content-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-columns {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .experience-timeline {
+      width: 100%; /* Full width for smaller screens */
+      margin-bottom: 50px;
+  }
+}
+
+/* Experience Section Ends */
+/* --------------------------------------------- */
+
+
+
+
+/* --------------------------------------------- */
+/* Projects Section */
+#projects h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #002057; /* Navy Blue for headings */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.project-card {
+  background-color: #F5F7FA; /* Light grey for cards */
+  border: 1px solid #002057; /* Navy border */
+  border-radius: 10px;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #002057; /* Navy border */
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #002057; /* Navy for project titles */
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #667788; /* Muted Blue-Grey for description text */
+}
+
+/* Styling for the project links */
+.project-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #002057; /* Text color */
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.project-links a i {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 20px;
+}
+
+/* Hover effect */
+.project-links a:hover {
+  color: crimson; /* Change color on hover */
+}
+
+/* Icons */
+.project-links i.fab.fa-github {
+  color: #333; /* GitHub icon color */
+}
+
+.project-links i.fas.fa-video {
+  color: #c4302b; /* YouTube/video icon color */
+}
+
+/* --------------------------------------------- */
+/* Achievements Section */
+#achievements {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+#achievements h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #002057; /* Navy Blue for headings */
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto; /* Three rows */
+  grid-gap: 10px;
+}
+
+.achievement-card {
+  background-color: #F5F7FA; /* Light grey for cards */
+  border: 1px solid #002057; /* Navy border */
+  border-radius: 10px;
+  width: 350px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #002057; /* Navy for achievement titles */
+}
+
+.achievement-card p {
+  font-size: 16px;
+  color: #667788; /* Muted Blue-Grey for description text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievement-grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+      justify-content: center;
+  }
+}
+
+/* --------------------------------------------- */
+/* Contact Section */
+#contact {
+  background-color: black; /* Navy Blue for section background */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #F5F7FA; /* Light grey for headings */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.contact-item a {
+  color: #F5F7FA; /* Light grey for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #00A8FF; /* Light blue for hover effect */
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column; /* Stacks contact items on smaller screens */
+  }
+}
+
+/* Smoked-white background color for about and projects */
+#about, #projects {
+  display: flex;
+  background-color: white; /* Smoked-white color */
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #333333; /* Dark text color for readability */
+}
+
+/* Pure white background color for experience and achievements */
+#experience, #achievements {
+  display: flex;
+  background-color: whitesmoke; /* White color */
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #333333; /* Dark text color for readability */
+}

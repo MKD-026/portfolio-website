@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mrinmoy's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"><a href="#home">MKD</a></h2>
+        <nav class="navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a> 
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+            <button class="btnlogin-popup" onclick="downloadResume()">Resume</button>
+        </nav>
+        <!-- <button id="theme-toggle" class="theme-toggle">
+            <ion-icon name="sunny-outline"></ion-icon>
+            <ion-icon name="moon-outline"></ion-icon>
+        </button> -->
+    </header>
+
+    <!-- hero section starts -->
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+
+        <div class="content">
+            <div class="text-container">
+                <h1>Hi there,</h1>
+                <h1>I'm Mrinmoy Kumar Das</h1>
+                <h2><span>Computer Vision, AI </span>& <span>Robotics Enthusiast </span></h2>
+
+                <p>I love exploring new use cases of computer vision and deep-learning to  solve autonomous robotics problems. I am interested in AI research, particularly in computer vision and deep-learning.</p>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1Y1g9raRBs9pLmBQE8OqmSYmyN0vsuhKU/view?usp=share_link" class="btn">Resume</a>
+                    <a href="https://www.linkedin.com/in/mrinmoy-kumar-das/" class="btn social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MKD-026" class="btn social-icon"><i class="fab fa-github"></i></a>
+                    <!-- <a href="mailto:das20ucse101@mahindrauniversity.edu.in" class="btn social-icon"><i class="fas fa-envelope"></i></a> -->
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="./assets/pp.png" alt="Your Name">
+            </div>
+    </section>
+    <!-- hero section ends -->
+    
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About Me</h2>
+        
+        <div class="row">
+            <div class="image">
+                <img draggable="false" class="tilt" src="./assets/pp2.jpeg" alt="">
+            </div>
+    
+            <div class="content">
+                <h3>Hello! I'm <span class="name-highlight">Mrinmoy</span></h3>
+                <p class="intro-text">
+                    I am a Computer Science and Engineering graduate from Hyderabad,India. I am passionate about computer vision, deep-learning, and robotics. Currently, I am working in the underwater perception domain, focusing on improving underwater image dehazing for autonomous robots. My goal is to pursue a master's in Robotics with a concentration in AI and contribute to cutting-edge research in autonomous exploration.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -->
+    
+
+
+
+    <!-- Experience Section Starts -->
+    <section class="experience-container", id="experience">
+        <h2 class="experience-title"><i class="fas fa-briefcase"></i> Experience</h2> 
+
+        <div class="experience-columns">
+            <!-- Industry Experience Column -->
+            <article class="experience-timeline industry-experience">
+              <h3>Industry Experience</h3>
+              <!-- internship no -->
+              <div class="timeline-content">
+                <div class="timeline-item">
+                  <div class="timeline-content-item">
+                    <h4>Duodecimal</h4>
+                    <p><strong>Deep Learning Engineer</strong></p>
+                    <p>Sept 2024 - Present</p>
+                    <p>Worked with land-based-land-cover performance modeling using Random forest and Support Vector machines on satellite data (TIFF images).</p>
+                  </div>
+                </div>
+            
+                <!-- internship no 3-->
+                <div class="timeline-item">
+                  <div class="timeline-content-item">
+                    <h4>KIS.AI</h4>
+                    <p><strong>AI/ML Intern</strong></p>
+                    <p>May 2024 - July 2024</p>
+                    <p>Implemented end-to-end NLP pipelines for NER, Knowledge Graphs, using SpaCy Transformers; reducing computation
+                        costs and increasing inference speeds by 40%.</p>
+                  </div>
+                </div>
+              </div>
+            
+            
+                <!-- internship no 2-->
+                <div class="timeline-item">
+                    <div class="timeline-content-item">
+                        <h4>Duodecimal</h4>
+                        <p><strong>Deep Learning Engineer Intern</strong></p>
+                        <p>October 2023 - March 2024</p>
+                        <p>Designed proof-of-concept to transition from traditional sensor based systems to AI camera-based solution. Deployed POC to multiple manufacturing chains, leading to 40% increase in production efficiency.</p>
+                    </div>
+                </div>
+
+                <!-- internship no 1-->
+                <div class="timeline-item">
+                    <div class="timeline-content-item">
+                        <h4>Hewlett Packard Enterprise (HPE)</h4>
+                        <p><strong>Intern</strong></p>
+                        <p>June 2022 - July 2022</p>
+                        <p>Created ML pipeline to train and evaluate classification models like VGG and ResNet. Deployed best-performing model to Microsoft Azure for real-time predictions. Achieved 84% accuracy on MRI dataset.</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Research Experience Column -->
+            <article class="experience-timeline research-experience">
+              <h3>Research Experience</h3>
+              <div class="timeline-content">
+                <div class="timeline-item">
+                  <div class="timeline-content-item">
+                    <h4>Mahindra University | Undergraduate Research Assistant</h4>
+                    <p><strong>Image Classification using hybrid Classical-Quantum CNNs</strong></p>
+                    <p>January 2024 - April 2024</p>
+                    <p>- Developed hybrid method consisting of quantum encoding and flattening classical images using quantum circuits and training them using CNNs.</p>
+
+                    <p><br><br></p>
+                    <p><strong>Underwater Image Dehazing</strong></p>
+                    <p>January 2023 - December 2023</p>
+                    <p>- Developed new approach for underwater image dehazing using superpixel segmentation with UNTV model in YCbCr color space to achieve superior transmission maps and image enhancements.</p>
+                    <p>- Accepted for paper presentation at <strong>ICVIP'23</strong> at Kyoto University, Japan.</p>
+                    
+                  </div>
+                </div>
+        
+                <div class="timeline-item">
+                  <div class="timeline-content-item">
+                    <h4>CSIS, Mahindra University</h4>
+                    <p><strong>Undergraduate Research Assistant</strong></p>
+                    <p>October 2022 - May 2023</p>
+                    <p>Engineered a solution to calculate damaged area and severity percentage from images using deep-learning based segmentation algorithms
+                        achieving accuracy of 65% to 75%.</p>
+                    <p>Accepted for Paper presentation at <strong>Stanford University</strong> at <strong>IWSHM'23</strong>.</p>
+                    <p>One of fourteen presenters for <strong>Prototyping Round (IWSHM'23)</strong>.</p>
+                  </div>
+                </div>
+
+
+                <!-- internship no 1-->
+                <div class="timeline-item">
+                    <div class="timeline-content-item">
+                      <h4>National University of Singapore</h4>
+                      <p><strong>Academic Intern</strong></p>
+                      <p>June 2022 - July 2022</p>
+                      <p>Led end-to-end Brain Cancer Classification project using CNNs: VGG-16, VGG-19, and ResNet, achieving 83% accuracy. Implemented data augmentation methods to increase model generalization and avoid over-fitting. </p>
+                    </div>
+                  </div>
+              </div>
+            </article>
+          </div>
+      </section>
+  <!-- Experience Section Ends -->
+  
+    
+
+    <!-- projects section ends -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <!-- Detective VR Project -->
+            <div class="project-card">
+                <img src="assets/AUV.gif">
+                <h3>Autonomous Underwater Vehicle (AUV)</h3>
+                <p>Designed and manufactured AUV for Singapore AUV Challenge, capable of path planning, object localisation, and obstacle avoidance.</p>
+                <!-- Links for GitHub and Demo -->
+                <div class="project-links">
+                    <a href="https://github.com/MKD-026/AUV-MU">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    <a href="https://drive.google.com/file/d/197VJ5RufxrdfwOsC2un0GHm3K47qwAY6/view?usp=share_link">
+                        <i class="fas fa-video"></i> Demo
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Halloween AR Project -->
+            <div class="project-card">
+                <img src="assets/Screenshot 2024-10-24 at 6.09.03 PM.jpg">
+                <h3>Robocon'24: Autonomous Bot</h3>
+                <p>Designed and developed an autonomous bot capable picking balls and placing them into baskets.</p>
+                <p>Competed at DD-Robocon Nationals 2024 (IIT-Delhi) .</p>
+                
+                <!-- Links for GitHub and Demo -->
+                <div class="project-links">
+                    <a href="https://github.com/MKD-026/ROBOCON-MU">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                    <a href="https://drive.google.com/file/d/1Pw6kvNUP_NqzLeqPEsaHSJHCz1y0mkIS/view?usp=sharing">
+                        <i class="fas fa-video"></i> Demo
+                    </a>
+                </div>
+            </div>
+    
+            <!-- NN from scrach -->
+            <div class="project-card">
+                <img src="assets/neural_network.jpg">
+                <h3>Neural Network from Scratch</h3>
+                <p>Created a simple NN from scratch using only Numpy and Pandas libraries for MNIST dataset classification.</p>
+                <p>Ongoing developement based on learnings from Deep-Learning specialization</p>
+                <!-- Links for GitHub and Demo -->
+                <div class="project-links">
+                    <a href="https://github.com/MKD-026/NN-from-scratch.git">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+    
+            <!-- HTC Vive Projection Project -->
+            <!-- <div class="project-card">
+                <img src="assets/lunar_lander.mp4">
+                <h3>Lunar Lander (using RL) </h3>
+                <p>Developed a projection-based experience for HTC Vive, using Unity 3D.</p>
+                <p>Integrated 3D elements created in Cinema 4D for a seamless VR projection effect.</p>
+                <div class="project-links">
+                    <a href="https://github.com/MKD-026/lunar-lander-using-RL">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div> -->
+            
+            <!-- HTC Vive Projection Project -->
+            <div class="project-card">
+                <img src="assets/smartvision.jpeg">
+                <h3>SmartVision: Object localization for assisted living </h3>
+                <p>Designed a prototype solution to assist people suffering from vision loss to find items in their home using object detection, voice commands and wall-mounted camera.</p>
+                <!-- Links for GitHub and Demo -->
+                <div class="project-links">
+                    <a href="https://github.com/MKD-026/DemoProject">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fitify -->
+            <div class="project-card">
+                <img src="/assets/fitify.jpeg">
+                <h3>Fitify: AI based fitness tracker</h3>
+                <p>An AI based fitness solution designed to help people workout in the right form and posture. It is designed to help people correct their workout at the ease of their own home.</p> <p> Runner-up at E-summit competition 2022</p>
+                <!-- Links for GitHub and Demo -->
+                <div class="project-links">
+                    <a href="https://github.com/MKD-026/Fitify-AI-based-fitness-tracker">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Google Solution Challenge -->
+            <div class="project-card">
+                <img src="assets/GSC.gif">
+                <h3>HelpingHand (Google Solution Challenge'22)</h3>
+                <p>A solution that helps elderly people with mental health conditions (Alzheimers and Dementia) interact with a personalized Avatar for having of communications and reminded about day-to-day tasks.</p>
+                <!-- Links for GitHub and Demo -->
+                <div class="project-links">
+                    <a href="https://www.youtube.com/watch?v=ugGhAz_29rw">
+                        <i class="fas fa-video"></i> Demo
+                    </a>
+                    <a href="https://sites.google.com/view/dtl-helpinghand/blogs">
+                        <i class="fas fa-envelope"></i> Blog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="achievements">
+        <h2>Volunteering and Achievements</h2>
+        <div class="achievement-grid">
+          <div class="achievement-card">
+            <h3>Software Head (MU) DD-Robocon'24</h3>
+            <p>Headed the software team and was shortlisted till Stage-3. Represented at DD-Robocon'24 Nationals. </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Team Lead (MU) - SAUVC'24</h3>
+            <p>Led a interdisciplinary team consisting of mechanical, mechatronics, electrical and software students for SAUVC'24.</p>
+          </div>
+          
+          <div class="achievement-card">
+            <h3>Software Head- AUV club</h3>
+            <p>Mentored a group of students by guiding and helping them develop their skills in AI, Computer Vision, and Robotics.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Intermediate Quantum Hackathon Winner</h3>
+            <p>Received INR 8,000 for securing first position at Quantum Hackathon during Aether Fest'24. </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Runner-up at Business Ideation Challenge'22</h3>
+            <p>Received INR 15,000 for securing second position at Business Ideation Challenge, E-Summit'22.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Academic Scholarship</h3>
+            <p>Awarded INR 1,00,000 for outstanding academic performance in the year 2020-2021, ranking withing the top10%.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Winner: Hack-week at Mahindra University</h3>
+            <p>Designed a prototype for Gas cylinders with AI-based pressure sensors for safe pressure regulation.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Outgoing Global Volunteer - AIESEC</h3>
+            <p>Gained leadership skills and experience by contribtuing to the AIESEC community.</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+        
+            <div class="contact-item">
+                <a href="mailto:das20ucse101@mahindrauniversity.edu.in" class="btn social-icon" target="_blank">
+                  <i class="fas fa-envelope contact-icon"></i>
+                </a>
+                <a href="mailto:das20ucse101@mahindrauniversity.edu.in">das20ucse101@mahindrauniversity.edu.in</a>
+              </div>
+            
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/mrinmoy-kumar-das/" class="btn social-icon">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mrinmoy-kumar-das/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- particle.js links -->
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+
+    <!-- Main js for logic -->
+    <script src="logic.js"></script>
+
+</body>
+</html>
