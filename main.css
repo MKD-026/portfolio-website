@@ -291,7 +291,7 @@ header {
 /* Experience Section Starts */
 #experience {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-start;
   padding: 50px;
   color: #333333; /* Dark text color for readability */
@@ -311,15 +311,15 @@ header {
 }
 
 /* Flexbox layout for Industry and Research experience columns */
-.experience-columns {
+/* .experience-columns {
   display: flex;
-  justify-content: space-between; /* Ensures space between columns */
-  gap: 30px; /* Adjust the gap between the two columns */
-}
+  justify-content: space-between; 
+  gap: 30px; 
+} */
 
 /* Industry and Research column */
 .experience-timeline {
-  width: 48%; /* Equal width for both columns */
+  width: 100%; /*  48%; Equal width for both columns */
   font-size: 22px;
   color: crimson;
 }
